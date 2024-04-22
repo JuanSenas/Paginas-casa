@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(201, 144, 39);
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto; 
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "encabezado encabezado encabezado"
+                        "contenido contenido contenido";
+
+}
+.contenido{
+    width: 90%;
+    max-width: 1500px;
+    margin: 20px auto; 
+    display: grid;
+    gap: 20px; 
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "titulo titulo titulo"
+                         "receta1 receta2 receta3"
+                         "receta4 receta5 receta6"
+                         "titulopostres titulopostres titulopostres"
+                         "postre1 postre2 postre3";
+
+  
+}
+.contenedor > div,
+.contenedor .encabezado,
+.contenedor .contenido,
+.contenedor .titulo,
+.contenedor .receta1,
+.contenedor .receta2,
+.contenedor .receta3,
+.contenedor .receta4,
+.contenedor .receta5,
+.contenedor .postre1,
+.contenedor .postre2{
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid 
+}
+
+.encabezado{
+    background: rgb(113, 139, 0);
+    color: #fff;
+    grid-area: encabezado;
+}
+
+.titulo,
+.titulopostres{
+    background: rgb(23, 165, 106);
+    color: #fff;
+    grid-area: titulo;
+}
+
+.contenido{
+    background: rgb(69, 16, 202);
+    color: #fff;
+    grid-area: contenido;
+}
+
+.contenedor .receta1,
+.contenedor .receta2,
+.contenedor .receta3,
+.contenedor .receta4,
+.contenedor .receta5{
+    background: rgb(23, 44, 77);
+    color: #ffffff;
+}
+.contenedor .postre1,
+.contenedor .postre2{
+    background: rgb(213, 150, 123);
+    color: #ffffff;
+}
+.receta1{
+    grid-area: receta1;
+}
+.receta2{
+    grid-area: receta2;
+}
+.receta3{
+    grid-area: receta3;
+}
+.receta4{
+    grid-area: receta4;
+}
+.receta5{
+    grid-area: receta5;
+}
+.titulopostres{
+    grid-area: titulopostres;
+}
+.postre1{
+    grid-area: postre1;
+}
+.postre2{
+    grid-area: postre2;
+}
+
+

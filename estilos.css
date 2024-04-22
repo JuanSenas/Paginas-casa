@@ -47,15 +47,6 @@ body{
     grid-area: contenido; 
 }
 
-.contenedor .sidebar{
-    background: orange;
-    /*utilizamos flexbox para alinear el contenido*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    grid-area: sidebar; 
-}
-
 .contenedor .widget-1,
 .contenedor .widget-2{
     background: lightskyblue;
@@ -85,8 +76,7 @@ body{
     .contenedor{
         grid-template-areas: "encabezado encabezado encabezado"
                              "contenido contenido contenido"
-                             "sidebar sidebar sidebar"
-                             "widget-1 widget-1 widget-2"
+                             "contenido contenido contenido"
                              "pie pie pie";
     }
 }
